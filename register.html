@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Register.CSS">
+    <title>Register</title>
+
+    <!-- <script> 
+       
+       function checkForm(){
+          let x=document.forms["frm2"]["Pass"].value;
+          let y=document.forms["frm2"]["confirmPass"].value;
+          if( x!=y ){ alert("Error In Password");  return false; }
+       }
+
+    </script>
+
+    <script>
+
+         function findCountry(){
+          var z=document.getElementById("country");
+          z.value=z.value.toUpperCase();
+         }
+
+    </script> -->
+
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.027);">
+
+   <div class="Form">
+    
+     <form action="" name="frm2" onsubmit="checkForm()">
+        <div class="topLine">Create Your Account</div>
+        <div class="all">
+
+           <span style="margin-left: 5rem;">First Name</span> <input type="text" required><br><br>
+           <span style="margin-left: 5.1rem;">Last Name</span> <input type="text" required><br><br>
+           <span style="margin-left: 7rem;">Gender</span>
+           <input type="radio" name="gender" required><label> male </label>
+           <input type="radio" name="gender" required><label> female </label><br><br>
+           <span style="margin-left: 7.1rem;">Country </span> <input type="text" id="country" required onchange="findCountry()"><br><br>
+           <span style="margin-left: 2.2rem;">Phone Number </span> <input type="text" required><br><br>
+           <span style="margin-left: 8.1rem;">E-mail </span> <input type="text" required><br><br>
+           <span style="margin-left: 5.4rem;">Username </span> <input type="text" required><br><br>
+           <span style="margin-left: 5.7rem;">Password </span> <input type="password" name="Pass" required><br><br>
+           <span>Confirm Password </span> <input type="password" name="confirmPass" required><br><br>
+           <input type="submit" value="Create" style="margin-left: 12.7rem;">
+
+        </div>
+    
+     </form>
+
+   </div>
+    <script src="register.js"></script>
+</body>
+</html>
