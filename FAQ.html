@@ -1,87 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecTak</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://kit.fontawesome.com/c0b26d2e5e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+    <meta charset="utf-8">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="FAQ.css.txt">
+    <link rel="stylesheet" href="FStyle.css">
+    <script type="text/javascript">
+        /*$(".faq-plus").on('click', function () {
+            $(this).parent().parent().find('.faq-body')
+        });*/
+
+        document.getElementsByClassName("faq-plus").onclick = function () {
+            if (document.getElementsByClassName("faq-body").style.display === "none") {
+                document.getElementsByClassName("faq-body").style.display = 'block';
+            }
+
+        };
+    </script>
+   
+
 </head>
+
 <body>
+    <div class="navbar">
 
-
-
-
-
-<div class="navbar">
-
-    <a href="index.html" class="home">TecTak.</a>
-    <div class="Content">
-       <a href="about.html">About</a>
-       <a href="TecTak.html">Products</a>
-       <!-- <a href="#advertisement">Advertisement</a> -->
-       <!-- <a href="#review">Review</a> -->
-       <!-- <a href="#feedback">Feedback</a> -->
-       <a href="returns.html">Returns</a>
-       <a href="blog.html">Blog</a>
-       <a href="job.html">Job Application</a>
-       <!-- <a href="#applying">Applying</a> -->
+        <a href="index.html" class="home">TecTak.</a>
+        <div class="Content">
+           <a href="about.html">About</a>
+           <a href="TecTak.html">Products</a>
+           <!-- <a href="#advertisement">Advertisement</a> -->
+           <!-- <a href="#review">Review</a> -->
+           <!-- <a href="#feedback">Feedback</a> -->
+           <a href="returns.html">Returns</a>
+           <a href="blog.html">Blog</a>
+           <a href="job.html">Job Application</a>
+           <!-- <a href="#applying">Applying</a> -->
+        </div>
+    
     </div>
+    <br>
+        <div class="container">
+            <div class="row">
+                <div class="faq-wrapper">
+                    <div class="header">
+                        <h1>FAQs</h1>
 
-</div>
 
-<footer class="section-p1">
-    <div class="col">
-       <h4><a href="contact.html"> Contact Us</a></h4>
-       <a href="Service.html"><strong>Customer service</strong> </a>
-       <p> <strong>Address: </strong> Dr Ismail Wahbi St. ,Nasr City, Egypt</p>
-       <p> <strong>Phone: </strong> +201149087147 / +201226756854</p>
-       <p> <strong>Hours: </strong> 24/7</p>
-       <div class="follow">
-       <h4>Follow Us</h4>
-       <div class="icon">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-      </div>
-      </div>
-      <div class="copyright">
-        <p>© 2022, TecTak etc - Technology Modern Company</p>
-       </div>
-   </div>
 
-   <div class="col">
-     <h4>Others</h4>
-     <a href="index1.html">Advertisement</a>
-     <a href="review.html">Review</a>
-     <a href="FAQ.html">FAQ</a>
+
+                    </div>
+                    <div class="inner">
+                        <div class="faq-item">
+                            <h3> What is an FAQs page?
+                                <button class="faq-plus">&plus;</button>
+                            </h3>
+                            <div id="b0" class="faq-body">
+                                An FAQ (Frequently Asked Questions) page is a key part of a knowledge base
+                                because it addresses the most common questions customers have and is
+                                useful to customers at all stages of the customer journey.
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="faq-item">
+                            <h3> How can I return a product(s)?
+                                <button class="faq-plus">&plus;</button>
+                            </h3>
+                            <div id="b1" class="faq-body">
+                                Go to the returns page and fill in the information and we will contact you
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="faq-item">
+                            <h3>Why are there different prices for the same product?
+                                <button class="faq-plus">&plus;</button>
+                            </h3>
+                            <div id="b2" class="faq-body">
+                                The product may be sold by more than one seller (or)
+                                Sellers can bid on a product while keeping the price competitive.
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="faq-item">
+                            <h3>Are new products introduced every now and then?
+                                <button class="faq-plus">&plus;</button>
+                            </h3>
+                            <div id="b3" class="faq-body">
+                                We do our best to update our stock with all the trending products.
+                                <br>
+                                <br>
+                                We aim to provide the latest products at Tik Tac before you will find them anywhere
+                                else.
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="faq-item">
+                            <h3>What should I consider before placing a new order?
+                                <button class="faq-plus">&plus;</button>
+                            </h3>
+                            <div id="b4" class="faq-body">
+
+                                Before placing a new order, you must take into account some common factors such as
+                                price,
+                                quality, warranty and any other after-sales services provided by the seller.
+
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section-p1" style="background-color: rgba(0, 0, 0, 0.071); color: #333;">
+
+            <div class="col">
+                <h4> <a href="contact.html">Contact Us</a> </h4>
+                <p> <strong>Address: </strong> Dr Ismail Wahbi St. ,Nasr City, Egypt</p>
+                <p> <strong>Phone: </strong> +201149087147 / +201226756854</p>
+                <p> <strong>Hours: </strong> 24/7</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2022, TecTak etc - Technology Modern Company</p>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <h4>Others</h4>
+                <a href="index1.html">Advertisements</a>
+                <a href="review.html">Review</a>
+                <a href="FAQ.html">FAQ</a>
      <a href="Dill.html">Delivery</a>
-         <a href="payment.html">Payment Gateway</a>
+     <a href="payment.html">Payment Gateway</a>
 
-   </div>
-   <div class="col">
-    <h4>My Account</h4>
-    <a href="log in.html">Login</a>
-    <a href="register.html">Register</a>
 
-  </div>
-  <div class="col install">
-    <h4>Install App</h4>
-    <p>From App Store Or Google Play</p>
-    <div class="row">
-      <img src="img/app.jpg" alt="">
-      <img src="img/play.jpg" alt="">
-    </div>
-    <p>secuerd Payment Gateway</p>
-    <img src="img/pay.png" alt="">
-  </div>
- 
+            </div>
 
-    </footer>
+            <div class="col">
 
-<script src="script.js"></script>
+                <h4>My Account</h4>
+                <a href="log in.html">Login</a>
+                <a href="register.html">Register</a>
+
+            </div>
+
+            <div class="col install">
+
+                <h4>Install App</h4>
+                <p>From App Store Or Google Play</p>
+
+                <div class="row">
+
+                    <img src="WebSite Images/app.jpg" alt="">
+                    <img src="WebSite Images/play.jpg" alt="">
+
+                </div>
+
+                <p>secuerd Payment Gateway</p>
+                <img src="WebSite Images/pay.jpg" alt="">
+
+            </div>
+
+        </footer>
 </body>
+
 </html>

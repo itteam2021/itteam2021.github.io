@@ -1,87 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecTak</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://kit.fontawesome.com/c0b26d2e5e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <title>Online Return Center</title>
+    <link rel="stylesheet" href="RStyle.css">
 </head>
+
 <body>
+    <div class="navbar">
 
-
-
-
-
-<div class="navbar">
-
-    <a href="index.html" class="home">TecTak.</a>
-    <div class="Content">
-       <a href="about.html">About</a>
-       <a href="TecTak.html">Products</a>
-       <!-- <a href="#advertisement">Advertisement</a> -->
-       <!-- <a href="#review">Review</a> -->
-       <!-- <a href="#feedback">Feedback</a> -->
-       <a href="returns.html">Returns</a>
-       <a href="blog.html">Blog</a>
-       <a href="job.html">Job Application</a>
-       <!-- <a href="#applying">Applying</a> -->
+        <a href="index.html" class="home">TecTak.</a>
+        <div class="Content">
+           <a href="about.html">About</a>
+           <a href="TecTak.html">Products</a>
+           <!-- <a href="#advertisement">Advertisement</a> -->
+           <!-- <a href="#review">Review</a> -->
+           <!-- <a href="#feedback">Feedback</a> -->
+           <a href="returns.html">Returns</a>
+           <a href="blog.html">Blog</a>
+           <a href="job.html">Job Application</a>
+           <!-- <a href="#applying">Applying</a> -->
+        </div>
+    
     </div>
+        <br>
+        
+    <div>
+        <h1 class="header">Return center</h1>
+    </div>
+    <h2 class="h2">Easy Returns Process</h2>
+    <div>
+        <h4>Return Terms</h4>
+        <pre> <strong>"The consumer has the right to replace or return the product or commodity 
+ he purchased within 14 days if it is defective or does not conform to the 
+ specifications or the purpose for which it was contracted." </strong></pre>
+        <hr>
+    </div>
+    <form class="form">
+        <div>
+            <label for="number">Order number</label>
+            <br>
+            <input class="input" type="number" required id="number" placeholder="Order number">
+        </div>
 
-</div>
-
-<footer class="section-p1">
-    <div class="col">
-       <h4><a href="contact.html"> Contact Us</a></h4>
-       <a href="Service.html"><strong>Customer service</strong> </a>
-       <p> <strong>Address: </strong> Dr Ismail Wahbi St. ,Nasr City, Egypt</p>
-       <p> <strong>Phone: </strong> +201149087147 / +201226756854</p>
-       <p> <strong>Hours: </strong> 24/7</p>
-       <div class="follow">
-       <h4>Follow Us</h4>
-       <div class="icon">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-      </div>
-      </div>
-      <div class="copyright">
-        <p>© 2022, TecTak etc - Technology Modern Company</p>
+        <div>
+            <label for="date"> Order date</label>
+            <br>
+            <input class="date" type="date" id="date" required value="2022-01-01">
+        </div>
+        <div>
+            <label>Receipt</label>
+            <br>
+            <input type="file" src="submit.gif" alt="Submit">
+        </div>
+        <div>
+            <label>Your Suggestions</label>
+            <br>
+            <textarea placeholder="text"></textarea>
+        </div>
+        <div>
+            <input  class="btn" type="submit" value="Send">
+            <input  class="btn" type="reset" value="Clear">
+        </div>
+    </form>
+    <footer class="section-p1">
+        <div class="col">
+           <h4><a href="contact.html"> Contact Us</a></h4>
+           <a href="Service.html"><strong>Customer service</strong> </a>
+           <p> <strong>Address: </strong> Dr Ismail Wahbi St. ,Nasr City, Egypt</p>
+           <p> <strong>Phone: </strong> +201149087147 / +201226756854</p>
+           <p> <strong>Hours: </strong> 24/7</p>
+           <div class="follow">
+           <h4>Follow Us</h4>
+           <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+          </div>
+          <div class="copyright">
+            <p>© 2022, TecTak etc - Technology Modern Company</p>
+           </div>
        </div>
-   </div>
-
-   <div class="col">
-     <h4>Others</h4>
-     <a href="index1.html">Advertisement</a>
-     <a href="review.html">Review</a>
-     <a href="FAQ.html">FAQ</a>
-     <a href="Dill.html">Delivery</a>
+    
+       <div class="col">
+         <h4>Others</h4>
+         <a href="index1.html">Advertisement</a>
+         <a href="review.html">Review</a>
+         <a href="FAQ.html">FAQ</a>
+         <a href="Dill.html">Delivery</a>
          <a href="payment.html">Payment Gateway</a>
+    
+       </div>
+       <div class="col">
+        <h4>My Account</h4>
+        <a href="log in.html">Login</a>
+        <a href="register.html">Register</a>
+    
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store Or Google Play</p>
+        <div class="row">
+          <img src="img/app.jpg" alt="">
+          <img src="img/play.jpg" alt="">
+        </div>
+        <p>secuerd Payment Gateway</p>
+        <img src="img/pay.png" alt="">
+      </div>
+     
+    
+        </footer>
 
-   </div>
-   <div class="col">
-    <h4>My Account</h4>
-    <a href="log in.html">Login</a>
-    <a href="register.html">Register</a>
 
-  </div>
-  <div class="col install">
-    <h4>Install App</h4>
-    <p>From App Store Or Google Play</p>
-    <div class="row">
-      <img src="img/app.jpg" alt="">
-      <img src="img/play.jpg" alt="">
-    </div>
-    <p>secuerd Payment Gateway</p>
-    <img src="img/pay.png" alt="">
-  </div>
- 
-
-    </footer>
-
-<script src="script.js"></script>
 </body>
+
 </html>
