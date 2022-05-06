@@ -1,0 +1,64 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Verdana,Geneva,Tahoma,sans-serif;
+outline:none;
+border:none;
+text-decoration:none;
+text-transform:capitalize;
+transition:.2s linear;
+}
+.form{
+margin-left:25%;
+margin-top:15%;
+margin-right:25%;
+margin-bottom:15%;
+padding:10%;
+background-image:url("P2.jpeg") ;
+background-size:cover;
+background-repeat:no-repeat;
+}
+.body{
+background-image:url("P1.jpeg");
+background-size:cover;
+background-repeat:no-repeat;
+
+}
+.home{
+display:inline-block;
+margin-top:1rem;
+border-radius:5rem;
+background-color:black;
+color:#fff;
+padding:.9rem 3.5rem;
+cursor:pointer;
+font-size:1.7rem;
+}
+.home:hover {
+background-color:blue;
+
+
+}
+.products {
+display:inline-block;
+margin-top:1rem;
+border-radius:5rem;
+background-color:black;
+color:#fff;
+padding:.9rem 3.5rem;
+cursor:pointer;
+font-size:1.7rem;
+}
+.products:hover {
+background-color:blue;
+
+
+}
+
+.title{
+color:#fff;
+
+font-size:2rem;
+
+}

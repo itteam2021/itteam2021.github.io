@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="style-visa.css">
+<meta charset="UTF-8"/>
+<title>visa</title>
+</head>
+<body class="body">
+<div class="form">
+<p class="title">put your data</p>
+<form action="cash.html" >
+<label for="can" class="can">card number:</label>
+<input type="text" id="can" required  minlength="16" maxlength="16">
+<br>
+<label for="name" class="name">name:</label>
+<input type="text" required id="name">
+<br>
+<label for="date" class="date">expiration date:</label>
+<input type="date" required id="date">
+<br>
+<label for="sec" class="sec">securty code:</label>
+<input type="text" required id="sec" minlength="3" maxlength="3">
+<br>
+<label for="cit" class="cit">city:</label>
+<select id="cit" required>
+<option>cairo</option>
+<option>giza</option>
+
+</select>
+<br>
+<input type="submit" value="pay" class="btn">
+
+</form>
+</div>
+
+
+</body>
+</html>
