@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: #12172b;
+    font-family: "poppins", sans-serif;
+}
+.container {
+    margin: 20px 40px;
+    color: white;
+}
+.heading {
+    font-size: 60px;
+    color: white;
+}
+.heading span {
+    font-style: italic;
+    font-size: 30px;
+}
+.profiles {
+    justify-content: space-around;
+    margin: 20px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.profile {
+    flex-basis: 260px;
+}
+.profile .profile-img {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+.profile:hover .profile-img {
+    filter: grayscale(0);
+}
+.user-name{
+    margin-top: 30px;
+    font-size: 35px;
+}
+.profile h5 {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #ccc;
+}
+.profile p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+}
+@media only screen and (max-width: 1150px) {
+    .profiles {
+        flex-direction: column;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile p {
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .heading{
+        font-size: 40px;
+        color: white;
+        text-align: center;
+    }
+    .heading span {
+        font-size: 15px;
+    }
+    .profiles{
+        margin: 20px 0;
+    }
+    .profile p {
+        margin: 20px 10px 80px 10px;
+    }
+}
+.navbar{
+    background-color: rgb(34, 34, 202);
+    height: 4rem;
+    width: 100%;
+    box-shadow:0 .5rem 1rem rgb(0, 0, .1);
+}
+.navbar .home{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    text-decoration: none;
+}
+.navbar .Content a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    position: relative;
+    left: 25.5rem;
+    top: 1.1rem;
+    padding-left: 2rem; padding-right: 2rem;
+}
+.navbar .Content a:hover{
+    color: red;
+}
