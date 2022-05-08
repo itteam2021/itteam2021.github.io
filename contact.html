@@ -7,15 +7,19 @@
     <title>TecTak</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/c0b26d2e5e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style_Contact.css"/>
+    <link rel="stylesheet" href="css.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("light-theme");
+        }
+    </script>
 </head>
+
 <body>
 
-
-
-
-
+    
 <div class="navbar">
 
     <a href="index.html" class="home">TecTak.</a>
@@ -34,23 +38,22 @@
 </div>
 
 <div class="container">
-  <div class="contact-box">
-    <div class="left"></div>
-    <div class="right">
-       <h2>Contact Us</h2>
-       <input type="text" class="field" placeholder="Your Name">
-       <input type="email" class="field" placeholder="Your E-mail">
-       <input type="text" class="field" placeholder="Your Phone">
-       <textarea class="field area" placeholder="Message"></textarea>
-       <button class="btn" onclick="myFunction()">Send</button>
+    <h1 class="formhead">Contact us</h1>
+    <h2 class="inform">Fill this form to help you</h2>
+    <div class="forms">
+        <form class="contact" method="post" action="contact.html">
+            <label class="text" for="name">Your name</label><br>
+            <input class="inner" type="text" id="name" name="name" placeholder="example:Elon musk"><br><br>
+            <label class="text" for="email">Email</label><br>
+            <input class="inner" type="email" id="email" name="email" placeholder="example:ea@gmail.com"><br><br>
+            <label class="text" for="describtion">Describtion of the problem</label><br>
+            <textarea class="inner" rows="10" cols="25" type="text" id="describtion" name="describtion" placeholder="example:i have a problem"></textarea><br><br>
+            <button type="submit" >check</button>
+            <button type="submit" onclick="alert('We will send a respond to you in few days')">submit</button>
+        </form>
     </div>
-  </div>
-</div>
+</div><br><br>
 
-
-
-<br>
-<hr>
 <footer class="section-p1" style="background-color: rgba(0, 0, 0, 0.071); color: #333;">
     <div class="col">
       <h4><a href="contact.html"> Contact Us</a></h4>
@@ -100,6 +103,10 @@
 
     </footer>
 
-<script src="Contact.js"></script>
+
+
+
+
+
+    
 </body>
-</html>
